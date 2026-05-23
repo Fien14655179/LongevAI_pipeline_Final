@@ -1,0 +1,24 @@
+{
+  "user_id": "U9114",
+  "name": "Maria L.",
+  "primary_goal": "Maximize Strength Gains and Muscle Preservation",
+  "current_lifestyle": {
+    "diet_summary": "Low overall calorie intake relative to activity level. Protein intake estimated at 0.8g per kg body weight.",
+    "exercise_frequency": "High-intensity lifting 5x/week."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 7.0,
+    "hrv_status": "Normal",
+    "estimated_vo2_max": "Average",
+    "blood_marker_A1C_estimate": 4.9,
+    "estimated_muscle_mass_percent": 22.5,
+    "daily_protein_intake_grams": 75,
+    "average_lift_capacity_score": 65,
+    "hs_crp_mg_per_L": 0.8,
+    "apoB_mg_per_dL": 85,
+    "total_cholesterol_mg_per_dL": 180,
+    "ldl_c_mg_per_dL": 100,
+    "hdl_c_mg_per_dL": 65,
+    "triglycerides_mg_per_dL": 70
+  }
+}

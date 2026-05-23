@@ -1,0 +1,24 @@
+{
+  "user_id": "U7892",
+  "name": "Samira K.",
+  "primary_goal": "Improve Metabolic Health and Body Composition",
+  "current_lifestyle": {
+    "diet_summary": "Mostly whole foods, but high intake of saturated fats. Adequate protein intake.",
+    "exercise_frequency": "Intense cardio 4x/week, no structured strength training."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 7.9,
+    "hrv_status": "High",
+    "estimated_vo2_max": "Above Average",
+    "blood_marker_A1C_estimate": 5.9,
+    "resting_metabolic_rate_efficiency": "Suboptimal",
+    "visceral_fat_estimate_proxy": "Moderate-High",
+    "blood_pressure_systolic_diastolic": "135/88",
+    "hs_crp_mg_per_L": 2.8,
+    "apoB_mg_per_dL": 125,
+    "total_cholesterol_mg_per_dL": 220,
+    "ldl_c_mg_per_dL": 140,
+    "hdl_c_mg_per_dL": 40,
+    "triglycerides_mg_per_dL": 190
+  }
+}

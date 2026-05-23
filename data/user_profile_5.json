@@ -1,0 +1,24 @@
+{
+  "user_id": "U2055",
+  "name": "Ben T.",
+  "primary_goal": "Reduce Systemic Inflammation and Improve Joint Health",
+  "current_lifestyle": {
+    "diet_summary": "High intake of vegetable oils and fried foods. Very low intake of fatty fish or Omega-3 rich sources.",
+    "exercise_frequency": "Sedentary office job; light yoga 1x/week."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 7.5,
+    "hrv_status": "Normal",
+    "estimated_vo2_max": "Below Average",
+    "blood_marker_A1C_estimate": 5.2,
+    "crp_proxy_inflammatory_index": "Elevated",
+    "omega3_index_percent": 3.1,
+    "sedentary_hours_per_day": 10.5,
+    "hs_crp_mg_per_L": 4.2,
+    "apoB_mg_per_dL": 130,
+    "total_cholesterol_mg_per_dL": 230,
+    "ldl_c_mg_per_dL": 150,
+    "hdl_c_mg_per_dL": 35,
+    "triglycerides_mg_per_dL": 220
+  }
+}

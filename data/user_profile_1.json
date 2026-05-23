@@ -1,0 +1,24 @@
+{
+  "user_id": "U4501",
+  "name": "Alex J.",
+  "primary_goal": "Maximize Cognitive Performance and Focus",
+  "current_lifestyle": {
+    "diet_summary": "Tends towards high-carb, low-fiber meals. Frequently skips breakfast. Consumes 2 cups of coffee daily.",
+    "exercise_frequency": "Light resistance training 2x/week, minimal cardiovascular work."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 6.2,
+    "hrv_status": "Low",
+    "estimated_vo2_max": "Below Average",
+    "blood_marker_A1C_estimate": 5.6,
+    "stress_resilience_score": 40,
+    "focus_duration_average_minutes": 35,
+    "gut_health_score": 55,
+    "hs_crp_mg_per_L": 2.1,
+    "apoB_mg_per_dL": 110,
+    "total_cholesterol_mg_per_dL": 215,
+    "ldl_c_mg_per_dL": 135,
+    "hdl_c_mg_per_dL": 45,
+    "triglycerides_mg_per_dL": 160
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "user_id": "U1003",
+  "name": "David R.",
+  "primary_goal": "Reduce Systemic Stress and Enhance Longevity Markers",
+  "current_lifestyle": {
+    "diet_summary": "Inconsistent eating schedule; often relies on processed snacks during high-stress work periods.",
+    "exercise_frequency": "Sporadic walks only; no structured routine."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 5.5,
+    "hrv_status": "Very Low",
+    "estimated_vo2_max": "Poor",
+    "blood_marker_A1C_estimate": 5.4,
+    "morning_stress_peak_proxy": "High",
+    "deep_sleep_time_hours": 1.1,
+    "daily_step_count": 2100,
+    "hs_crp_mg_per_L": 3.5,
+    "apoB_mg_per_dL": 115,
+    "total_cholesterol_mg_per_dL": 205,
+    "ldl_c_mg_per_dL": 130,
+    "hdl_c_mg_per_dL": 38,
+    "triglycerides_mg_per_dL": 175
+  }
+}

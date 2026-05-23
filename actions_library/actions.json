@@ -1,0 +1,144 @@
+{
+  "actions": [
+    {
+      "id": "A001",
+      "title": "Mediterranean Diet Protocol",
+      "category": "Nutrition",
+      "description": "Increase intake of olive oil, fatty fish, legumes, and vegetables. Reduce processed foods and refined carbohydrates.",
+      "priority_weight": 0.9
+    },
+    {
+      "id": "A002",
+      "title": "Omega-3 Supplementation",
+      "category": "Nutrition",
+      "description": "Supplement with 2-3g EPA/DHA daily to reduce systemic inflammation and support cardiovascular health.",
+      "priority_weight": 0.85
+    },
+    {
+      "id": "A003",
+      "title": "Sleep Optimization Protocol",
+      "category": "Sleep & Recovery",
+      "description": "Cool bedroom to 18 degrees. No screens 1 hour before bed. Consistent sleep schedule 7-9 hours.",
+      "priority_weight": 0.95
+    },
+    {
+      "id": "A004",
+      "title": "HRV Recovery Tracking",
+      "category": "Sleep & Recovery",
+      "description": "Track HRV daily to monitor recovery status and adjust training intensity accordingly.",
+      "priority_weight": 0.8
+    },
+    {
+      "id": "A005",
+      "title": "Zone 2 Cardio Training",
+      "category": "Exercise & Movement",
+      "description": "45-60 minutes of low intensity cardio 3-4x per week to improve mitochondrial function and VO2 max.",
+      "priority_weight": 0.9
+    },
+    {
+      "id": "A006",
+      "title": "Progressive Resistance Training",
+      "category": "Exercise & Movement",
+      "description": "Structured strength training 3-4x per week with progressive overload to preserve muscle mass.",
+      "priority_weight": 0.85
+    },
+    {
+      "id": "A007",
+      "title": "Daily Step Goal",
+      "category": "Exercise & Movement",
+      "description": "Aim for 8000-10000 steps per day to reduce sedentary time and improve metabolic health.",
+      "priority_weight": 0.75
+    },
+    {
+      "id": "A008",
+      "title": "Mindfulness Meditation",
+      "category": "Stress Management",
+      "description": "10-20 minutes of daily meditation to reduce cortisol levels and improve stress resilience.",
+      "priority_weight": 0.85
+    },
+    {
+      "id": "A009",
+      "title": "Breathwork Protocol",
+      "category": "Stress Management",
+      "description": "Box breathing or 4-7-8 breathing technique twice daily to activate parasympathetic nervous system.",
+      "priority_weight": 0.8
+    },
+    {
+      "id": "A010",
+      "title": "Cognitive Training Program",
+      "category": "Cognitive Performance",
+      "description": "Daily brain training exercises combined with learning new skills to improve focus and memory.",
+      "priority_weight": 0.8
+    },
+    {
+      "id": "A011",
+      "title": "Caffeine Optimization",
+      "category": "Cognitive Performance",
+      "description": "Delay caffeine intake 90 minutes after waking. Avoid caffeine after 2pm to protect sleep quality.",
+      "priority_weight": 0.75
+    },
+    {
+      "id": "A012",
+      "title": "Anti-Inflammatory Diet",
+      "category": "Inflammation",
+      "description": "Eliminate vegetable oils and fried foods. Increase turmeric, ginger and polyphenol rich foods.",
+      "priority_weight": 0.9
+    },
+    {
+      "id": "A013",
+      "title": "CRP Monitoring Protocol",
+      "category": "Inflammation",
+      "description": "Regular hs-CRP testing every 3 months to track systemic inflammation levels.",
+      "priority_weight": 0.75
+    },
+    {
+      "id": "A014",
+      "title": "Blood Sugar Management",
+      "category": "Metabolic Health",
+      "description": "Reduce refined carbohydrates and add protein to every meal to stabilize blood glucose levels.",
+      "priority_weight": 0.9
+    },
+    {
+      "id": "A015",
+      "title": "Intermittent Fasting Protocol",
+      "category": "Metabolic Health",
+      "description": "16:8 intermittent fasting to improve insulin sensitivity and metabolic flexibility.",
+      "priority_weight": 0.8
+    },
+    {
+      "id": "A016",
+      "title": "Blood Pressure Management",
+      "category": "Cardiovascular Health",
+      "description": "Reduce sodium intake, increase potassium rich foods, and add 30 minutes of daily walking.",
+      "priority_weight": 0.9
+    },
+    {
+      "id": "A017",
+      "title": "ApoB Reduction Protocol",
+      "category": "Cardiovascular Health",
+      "description": "Reduce saturated fat intake and increase soluble fiber to lower ApoB levels.",
+      "priority_weight": 0.85
+    },
+    {
+      "id": "A018",
+      "title": "Gut Microbiome Support",
+      "category": "Gut Health",
+      "description": "Add fermented foods, prebiotic fiber and reduce processed foods to improve gut diversity.",
+      "priority_weight": 0.8
+    },
+    {
+      "id": "A019",
+      "title": "Vitamin D3 & K2 Protocol",
+      "category": "Longevity Protocols",
+      "description": "Supplement with 4000 IU Vitamin D3 and 100mcg K2 daily to support bone and cardiovascular health.",
+      "priority_weight": 0.85
+    },
+    {
+      "id": "A020",
+      "title": "Protein Optimization",
+      "category": "Nutrition",
+      "description": "Increase protein intake to 1.6-2.2g per kg body weight daily to support muscle preservation and recovery.",
+      "priority_weight": 0.9
+    }
+  ]
+}
