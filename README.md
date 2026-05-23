@@ -51,6 +51,7 @@ The pipeline uses a fixed taxonomy of 10 categories:
 
 ## Project Structure
 
+```
 LongevAI_pipeline/
 ├── data/                    # Input user profiles (JSON)
 ├── actions_library/         # Fixed actions library
@@ -61,6 +62,7 @@ LongevAI_pipeline/
 ├── pipeline.py              # Main pipeline engine
 ├── requirements.txt         # Dependencies
 └── README.md
+```
 
 ## Appendix: Scalability & Production Documentation
 
