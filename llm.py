@@ -1,13 +1,17 @@
 import os
+import time
 from openai import OpenAI
 from config import OPENROUTER_API_KEY, OPENROUTER_LLM_MODEL
+import logging
+
+logger = logging.getLogger(__name__)
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
 )
 
-def generate_report(profile, top_actions):
+def generate_report(profile, top_actions, retries=3):
     name = profile["name"]
     goal = profile["primary_goal"]
     biomarkers = profile["biomarkers"]
@@ -41,10 +45,20 @@ Write a personalized health blueprint in JSON format with:
 Respond ONLY with valid JSON, no extra text.
 """
 
-    response = client.chat.completions.create(
-        model=OPENROUTER_LLM_MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7,
-    )
+    for attempt in range(retries):
+        try:
+            response = client.chat.completions.create(
+                model=OPENROUTER_LLM_MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7,
+            )
+            return response.choices[0].message.content
 
-    return response.choices[0].message.content
+        except Exception as e:
+            wait = 2 ** attempt
+            if attempt < retries - 1:
+                logger.warning(f"LLM call failed for {name} (attempt {attempt + 1}/{retries}). Retrying in {wait}s... Error: {str(e)}")
+                time.sleep(wait)
+            else:
+                logger.error(f"LLM call failed for {name} after {retries} attempts. Error: {str(e)}")
+                raise e

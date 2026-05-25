@@ -3,7 +3,7 @@ import json
 import os
 import logging
 from datetime import datetime
-from config import DATA_DIR, OUTPUT_PATH
+from config import DATA_DIR
 from embeddings import get_top_actions
 from llm import generate_report
 
@@ -73,11 +73,14 @@ async def run_pipeline():
         "results": results
     }
 
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w") as f:
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_path = f"output/report_{timestamp}.json"
+    os.makedirs("output", exist_ok=True)
+    
+    with open(output_path, "w") as f:
         json.dump(report, f, indent=2)
 
-    logger.info(f"Pipeline complete! Report saved to {OUTPUT_PATH}")
+    logger.info(f"Pipeline complete! Report saved to {output_path}")
     logger.info(f"Successful: {report['successful']}/{report['total_processed']}")
 
 if __name__ == "__main__":

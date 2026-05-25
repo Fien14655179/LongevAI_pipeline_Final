@@ -1,0 +1,21 @@
+{
+  "user_id": "U6601",
+  "name": "Lisa P.",
+  "primary_goal": "Maintain Optimal Health and Prevent Age-Related Decline",
+  "current_lifestyle": {
+    "diet_summary": "Strict Mediterranean diet, no processed foods.",
+    "exercise_frequency": "Zone 2 cardio 4x/week, strength training 3x/week."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 9.1,
+    "hrv_status": "Very High",
+    "estimated_vo2_max": "Excellent",
+    "blood_marker_A1C_estimate": 4.6,
+    "hs_crp_mg_per_L": 0.3,
+    "apoB_mg_per_dL": 65,
+    "total_cholesterol_mg_per_dL": 155,
+    "ldl_c_mg_per_dL": 80,
+    "hdl_c_mg_per_dL": 75,
+    "triglycerides_mg_per_dL": 55
+  }
+}

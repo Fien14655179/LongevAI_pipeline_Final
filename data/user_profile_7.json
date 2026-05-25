@@ -1,0 +1,21 @@
+{
+  "user_id": "U7701",
+  "name": "Mark D.",
+  "primary_goal": "Urgently Reduce Cardiovascular and Metabolic Risk",
+  "current_lifestyle": {
+    "diet_summary": "Fast food daily, no cooking at home, high sugar drinks.",
+    "exercise_frequency": "Completely sedentary, no exercise whatsoever."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 3.9,
+    "hrv_status": "Very Low",
+    "estimated_vo2_max": "Very Poor",
+    "blood_marker_A1C_estimate": 6.4,
+    "hs_crp_mg_per_L": 8.2,
+    "apoB_mg_per_dL": 175,
+    "total_cholesterol_mg_per_dL": 290,
+    "ldl_c_mg_per_dL": 210,
+    "hdl_c_mg_per_dL": 28,
+    "triglycerides_mg_per_dL": 380
+  }
+}

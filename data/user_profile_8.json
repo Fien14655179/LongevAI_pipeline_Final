@@ -1,0 +1,16 @@
+{
+  "user_id": "U8801",
+  "name": "Chen W.",
+  "primary_goal": "General Health Improvement",
+  "current_lifestyle": {
+    "diet_summary": "Unknown.",
+    "exercise_frequency": "Unknown."
+  },
+  "biomarkers": {
+    "sleep_score_avg": 6.0,
+    "hrv_status": "Normal",
+    "estimated_vo2_max": "Average",
+    "blood_marker_A1C_estimate": 5.3,
+    "hs_crp_mg_per_L": 1.5
+  }
+}
