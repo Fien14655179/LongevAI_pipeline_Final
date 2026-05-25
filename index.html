@@ -49,7 +49,6 @@
             border-radius: 20px;
             font-size: 0.82rem;
             border: 1px solid rgba(255,255,255,0.2);
-            backdrop-filter: blur(4px);
         }
 
         .container {
@@ -103,7 +102,6 @@
         .flow-arrow {
             color: #1a4a7a;
             font-size: 1.4rem;
-            font-weight: 300;
         }
 
         .cards {
@@ -193,6 +191,111 @@
             font-size: 0.88rem;
         }
 
+        /* Sample report styles */
+        .report-wrapper {
+            background: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .report-header {
+            background: linear-gradient(135deg, #0f2942, #1a4a7a);
+            padding: 32px;
+            color: white;
+        }
+
+        .report-header .user-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .report-header .user-goal {
+            color: #a8d4f0;
+            font-size: 0.9rem;
+        }
+
+        .report-summary {
+            padding: 28px 32px;
+            border-bottom: 1px solid #e0f2fe;
+            color: #475569;
+            font-size: 0.92rem;
+        }
+
+        .report-summary strong {
+            display: block;
+            color: #0f2942;
+            margin-bottom: 8px;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .action-cards {
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .action-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .priority-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            margin-top: 2px;
+        }
+
+        .priority-high {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .priority-medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .priority-low {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .action-content h4 {
+            color: #0f2942;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .action-content .action-category {
+            font-size: 0.75rem;
+            color: #1a4a7a;
+            margin-bottom: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .action-content p {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
         footer {
             text-align: center;
             padding: 40px;
@@ -247,6 +350,64 @@
             <div class="flow-step">
                 <strong>Report</strong>
                 <p>Timestamped JSON with executive summary and action cards</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Sample Output</h2>
+        <p style="color: #64748b; margin-bottom: 24px; font-size: 0.92rem;">Below is an example of a generated health blueprint for a real test profile. Each report is fully personalized based on the user's biomarkers and primary goal.</p>
+        
+        <div class="report-wrapper">
+            <div class="report-header">
+                <div class="user-name">Alex J.</div>
+                <div class="user-goal">Goal: Maximize Cognitive Performance and Focus</div>
+            </div>
+            <div class="report-summary">
+                <strong>Executive Summary</strong>
+                Alex J. aims to boost cognitive performance and focus, but current biomarkers reveal low sleep quality (6.2), low HRV, below-average VO2 max, and elevated hs-CRP (2.1 mg/L) indicating inflammation. A high-carb, low-fiber diet and limited movement are likely contributing to modest cholesterol levels and a gut health score of 55. Targeted nutrition, movement, and lifestyle tweaks can improve brain oxygenation, reduce inflammation, and enhance stress resilience.
+            </div>
+            <div class="action-cards">
+                <div class="action-card">
+                    <span class="priority-badge priority-high">High</span>
+                    <div class="action-content">
+                        <div class="action-category">Nutrition</div>
+                        <h4>Alex's Omega-3 Inflammation Shield</h4>
+                        <p>Your hs-CRP of 2.1 mg/L signals systemic inflammation that can impair cognition. Supplementing 2-3g EPA/DHA daily will help lower CRP, support neuronal membrane fluidity, and boost focus duration.</p>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <span class="priority-badge priority-high">High</span>
+                    <div class="action-content">
+                        <div class="action-category">Nutrition</div>
+                        <h4>Alex's Mediterranean Brain-Fuel Plan</h4>
+                        <p>Switching from refined carbs to olive oil, fatty fish, legumes, and vegetables will raise fiber and improve lipid profile (LDL-C 135 mg/dL, HDL-C 45 mg/dL), directly benefiting blood-brain barrier integrity and focus.</p>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <span class="priority-badge priority-high">High</span>
+                    <div class="action-content">
+                        <div class="action-category">Exercise & Movement</div>
+                        <h4>Alex's 8k-10k Daily Step Challenge</h4>
+                        <p>Your estimated VO2 max is below average and HRV is low. Increasing steps to 8,000-10,000 per day will reduce sedentary time, improve aerobic capacity, and enhance HRV, all linked to sharper attention spans.</p>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <span class="priority-badge priority-medium">Medium</span>
+                    <div class="action-content">
+                        <div class="action-category">Cardiovascular Health</div>
+                        <h4>Alex's Sodium-Smart Blood Pressure Routine</h4>
+                        <p>A lower sodium and higher potassium diet, paired with 30 minutes of daily walking, can raise VO2 max and lower cardiovascular strain, supporting sustained mental energy.</p>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <span class="priority-badge priority-medium">Medium</span>
+                    <div class="action-content">
+                        <div class="action-category">Longevity Protocols</div>
+                        <h4>Alex's Vitamin D3 + K2 Bone-Brain Boost</h4>
+                        <p>A daily 4,000 IU D3 plus 100 mcg K2 supports calcium metabolism, cardiovascular health, and may improve sleep score, which is currently at 6.2.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
