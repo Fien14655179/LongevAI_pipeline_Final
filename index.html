@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LongevAI Pipeline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f2942 0%, #1a4a7a 60%, #1e6091 100%);
+            padding: 100px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            color: #a8d4f0;
+            max-width: 580px;
+            margin: 0 auto 36px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.1);
+            color: #e0f2fe;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 70px 40px;
+        }
+
+        .section {
+            margin-bottom: 70px;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #0f2942;
+            margin-bottom: 28px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e0f2fe;
+        }
+
+        .flow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 24px 0;
+        }
+
+        .flow-step {
+            background: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            flex: 1;
+            min-width: 140px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .flow-step strong {
+            display: block;
+            color: #1a4a7a;
+            margin-bottom: 8px;
+        }
+
+        .flow-step p {
+            font-size: 0.82rem;
+            color: #64748b;
+        }
+
+        .flow-arrow {
+            color: #1a4a7a;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            color: #1a4a7a;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 0.88rem;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .category-tag {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1a4a7a;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .code-block {
+            background: #0f2942;
+            border-radius: 10px;
+            padding: 28px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.88rem;
+            color: #a8d4f0;
+            margin: 16px 0;
+            overflow-x: auto;
+            line-height: 2;
+        }
+
+        .models {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .model-card {
+            background: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-left: 4px solid #1a4a7a;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .model-card .label {
+            font-size: 0.72rem;
+            color: #1a4a7a;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .model-card h3 {
+            color: #0f2942;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .model-card p {
+            color: #64748b;
+            font-size: 0.88rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.88rem;
+            background: #f8fafc;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .flow-arrow { display: none; }
+            .models { grid-template-columns: 1fr; }
+            .container { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LongevAI Pipeline</h1>
+    <p>A scalable AI pipeline that processes user health profiles and generates personalized health blueprints.</p>
+    <div class="badges">
+        <span class="badge">Python 3.11</span>
+        <span class="badge">Bio_ClinicalBERT</span>
+        <span class="badge">OpenRouter</span>
+        <span class="badge">asyncio</span>
+        <span class="badge">MIT License</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="section">
+        <h2>How it works</h2>
+        <div class="flow">
+            <div class="flow-step">
+                <strong>Load Profiles</strong>
+                <p>JSON user profiles with biomarkers and lifestyle data</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <strong>Embeddings</strong>
+                <p>Bio_ClinicalBERT matches relevant actions to each user</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <strong>LLM</strong>
+                <p>Generates personalized report referencing biomarkers</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <strong>Report</strong>
+                <p>Timestamped JSON with executive summary and action cards</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Models</h2>
+        <div class="models">
+            <div class="model-card">
+                <div class="label">Embeddings</div>
+                <h3>Bio_ClinicalBERT</h3>
+                <p>Trained on clinical text including lab values and biomarkers. Used for matching health interventions to user profiles via cosine similarity.</p>
+            </div>
+            <div class="model-card">
+                <div class="label">LLM</div>
+                <h3>openai/gpt-oss-120b</h3>
+                <p>Via OpenRouter. Ideal production choice would be longevity-ai-4432/longevity-finetuned-v1, a Llama model finetuned on longevity data, once Inference Provider support becomes available.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Action Categories</h2>
+        <div class="categories">
+            <span class="category-tag">Nutrition</span>
+            <span class="category-tag">Sleep & Recovery</span>
+            <span class="category-tag">Exercise & Movement</span>
+            <span class="category-tag">Stress Management</span>
+            <span class="category-tag">Cognitive Performance</span>
+            <span class="category-tag">Inflammation</span>
+            <span class="category-tag">Metabolic Health</span>
+            <span class="category-tag">Cardiovascular Health</span>
+            <span class="category-tag">Gut Health</span>
+            <span class="category-tag">Longevity Protocols</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quick Start</h2>
+        <div class="code-block">
+            conda install -c conda-forge sentence-transformers openai python-dotenv aiohttp numpy<br><br>
+            cp .env.example .env &nbsp;&nbsp;# add your API keys<br><br>
+            python pipeline.py
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Parallel Processing</h3>
+                <p>All user profiles are processed concurrently using asyncio.gather(), meaning the pipeline never waits for one user before starting the next.</p>
+            </div>
+            <div class="card">
+                <h3>Resilient by Design</h3>
+                <p>Each user is processed in an independent try/except block. If one profile fails, the pipeline logs the error and continues with the rest.</p>
+            </div>
+            <div class="card">
+                <h3>Retry Logic</h3>
+                <p>LLM calls use exponential backoff retries. Transient API errors are handled automatically before giving up on a user.</p>
+            </div>
+            <div class="card">
+                <h3>Provider Agnostic</h3>
+                <p>Switching LLM providers requires changing only two lines in config.py. No changes to pipeline logic or prompt structure needed.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Built for LongevAI by Fien van Engelen
+</footer>
+
+</body>
+</html>
